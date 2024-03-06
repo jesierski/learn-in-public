@@ -1,5 +1,6 @@
 # learn-in-public
 Towards Data Engineering
 
-## Large Language Model (LLM) 
-First easy LLM
+## Natural Networks and Deep Learning
+By DeepLearning.AI
+(https://www.coursera.org/learn/neural-networks-deep-learning)
