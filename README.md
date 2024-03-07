@@ -1,7 +1,7 @@
 # learn-in-public
 Towards Data Engineering
 
-## contents
-Level Up: Java
-by Kathryn Hodge
-(https://www.linkedin.com/learning/level-up-java)
+
+## Natural Networks and Deep Learning
+By DeepLearning.AI
+(https://www.coursera.org/learn/neural-networks-deep-learning)
