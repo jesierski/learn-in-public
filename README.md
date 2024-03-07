@@ -2,6 +2,7 @@
 Towards Data Engineering
 
 ## Natural Networks and Deep Learning
+
 By DeepLearning.AI and Andrew Ng
 (https://www.coursera.org/learn/neural-networks-deep-learning)
 
@@ -16,6 +17,4 @@ Whenever possible avoid explicit for loops. Instead Vectorize.
 
 
 Applies to vectors and matrix valued functions as well. Use numpy built-in functions instead.
-
-
 
