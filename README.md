@@ -1,6 +1,13 @@
 # learn-in-public
 Towards Data Engineering
 
+
+# velpTEC edutainment
+
+## Java
+
+[By velpTEC edutainment](https://velptec.de/)
+
 # DeepLearning.AI
 
 ## Natural Networks and Deep Learning
