@@ -8,10 +8,6 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class PersonenVerwaltung {
-    /*
-
-    e) Implementiere eine einfache Benutzeroberfläche in der main-Methode, die es ermöglicht, Personen hinzuzufügen, zu löschen, anzuzeigen und die Speicher- und Ladeoperationen auszuführen. Verwende Verzweigungen, um auf Benutzereingaben zu reagieren, und Schleifen, um das Menü wiederholt anzuzeigen.
-    */
 
     // Klasse Person mit Attributen name und alter
     public class Person {
@@ -90,7 +86,7 @@ public class PersonenVerwaltung {
     }
 
     // Methode liest Personen aus der Datei personen.txt und lädt sie in das Array vom Typ PersonenVerwaltung.
-    public void ladePersonen() throws Exception {
+    public void ladePersonen() throws FileNotFoundException {
         File file = new File("personen.txt");
         Scanner scanner = new Scanner(file);
         try {        
@@ -115,6 +111,7 @@ public class PersonenVerwaltung {
         } 
         catch (Exception e) {
             e.printStackTrace();
+            e.getMessage();
         } 
         finally {
             scanner.close();
