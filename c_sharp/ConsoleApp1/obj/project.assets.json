@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git\\learn-in-public\\c_sharp\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "D:\\git\\learn-in-public\\c#\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "D:\\git\\learn-in-public\\c_sharp\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "D:\\git\\learn-in-public\\c#\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\Zauberer\\.nuget\\packages\\",
-      "outputPath": "D:\\git\\learn-in-public\\c_sharp\\ConsoleApp1\\obj\\",
+      "outputPath": "D:\\git\\learn-in-public\\c#\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zauberer\\AppData\\Roaming\\NuGet\\NuGet.Config",
