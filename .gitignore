@@ -1,5 +1,12 @@
-# Visual Studio Code Community Edition
+# C# files
 .vs
+*/.vs/*
+*/.vs
+bin/*
+bin/
+obj
+obj/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
