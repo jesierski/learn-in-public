@@ -21,5 +21,6 @@ switch (Wert2)
     case 4: Note2 = "Ausreichend"; break;
     case 5: Note2 = "Mangehaft"; break;
     case 6: Note2 = "Ungenügend"; break;
+    default: Note2 = "Quatsch!"; break;
 }
 Console.WriteLine(Note2);
