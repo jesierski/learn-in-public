@@ -6,6 +6,8 @@ bin/*
 bin/
 obj
 obj/
+*.csproj
+*.sln
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
