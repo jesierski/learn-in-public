@@ -2,17 +2,18 @@
 Towards Data Engineering
 
 
-# velpTEC 
-
-## C#
-
-## Java
-
+## velpTEC 
 [By velpTEC edutainment](https://velptec.de/)
 
-# DeepLearning.AI
+### C#
 
-## Natural Networks and Deep Learning
+### Java
+
+
+
+## DeepLearning.AI
+
+### Natural Networks and Deep Learning
 
 By Andrew Ng
 
