@@ -13,7 +13,7 @@ namespace GrafikHaus
 {
     public partial class Form1 : Form
     {
-        public Color hausFarbe = Color.Beige; 
+        public Color hausFarbe = Color.DarkBlue; 
 
         public Form1()
         {
@@ -21,7 +21,6 @@ namespace GrafikHaus
 
             this.Text = "Hausfarbe ändern";
             this.Paint += new PaintEventHandler(Form1_Paint);
-            this.Click += new EventHandler(colorButton_Click);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -82,7 +81,7 @@ namespace GrafikHaus
             colorButton.Text = "Neue Farbe";
             colorButton.SetBounds(40, 140, 80, 20);
             Controls.Add(colorButton);
-            colorButton.Click += colorButton_Click;
+            colorButton.Click += new EventHandler(colorButton_Click);
         }
 
         private void colorButton_Click(object sender, EventArgs e)
