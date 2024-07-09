@@ -8,6 +8,10 @@ obj
 obj/
 *.csproj
 *.sln
+Images/
+Images/*
+Resource/
+Resource/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
