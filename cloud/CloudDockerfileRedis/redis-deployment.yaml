@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: redis
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:
+        image: redis:7.0-alpine
+        name: redis
+        ports:
+        - containerPort: 6379
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      name: redis

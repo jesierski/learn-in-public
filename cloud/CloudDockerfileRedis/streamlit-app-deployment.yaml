@@ -1,0 +1,19 @@
+
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: streamlit-app
+spec:
+  template:
+    spec:
+      containers:
+      - image: velptcloud/cloud-computing-streamlit-app:latest
+        name: streamlit-app
+        ports:
+        - containerPort: 8501
+        resources: {}
+      restartPolicy: Always
+  replicas: 5
+  selector:
+    matchLabels:
+      name: streamlit-app
