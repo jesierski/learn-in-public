@@ -1,0 +1,23 @@
+version: '3'
+services:
+  streamlit_app:  
+    build: .
+    ports:
+        - "8501:8501"
+    depends_on:
+        - redis
+    networks:
+      - internal_network
+      - external_network
+
+  redis:
+    image: redis:7.0-alpine
+    ports:
+        - '6379:6379'
+    networks:
+      - internal_network
+        
+networks:
+  internal_network:
+    internal: True
+  external_network:
