@@ -1,0 +1,37 @@
+# YAML
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpw
+      - MYSQL_HOST=127.0.0.1
+#      - MYSQL_USER=root
+#      - MYSQL_DATABASE=db
+#      - MYSQL_PASSWORD=rootpw
+    ports:
+      - "3306:3306"
+    networks:
+      - nodenet
+  web:
+#    build: ./web
+    image: mywebapp
+    ports:
+      - "8080:8080"
+#    restart: unless-stopped
+    links:
+      - db
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=localhost
+#      - DB_PORT=3306
+#      - DB_USER=root
+      - DB_PASSWORD=rootpw
+      - DB_NAME=db
+    networks:
+      - nodenet
+networks:
+  nodenet:
+    driver: bridge
