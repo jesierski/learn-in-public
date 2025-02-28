@@ -1,9 +1,16 @@
 # learn-in-public
 Towards Data Engineering
 
+---
+## LinkedIn Learning
 
+### [Python Programmierpraxis: Objektorientierte Programmierung](https://www.linkedin.com/learning/python-programmierpraxis-objektorientierte-programmierung/das-lab-erkunden)
+
+By Florence Maurice and Scott Simpson
+
+---
 ## velpTEC 
-[By velpTEC edutainment](https://velptec.de/)
+By [velpTEC edutainment](https://velptec.de/)
 
 ### DevOps
 
@@ -15,15 +22,13 @@ Towards Data Engineering
 
 ### Java
 
-
-
+---
 ## DeepLearning.AI
 
-### Natural Networks and Deep Learning
+### [Natural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning)
 
 By Andrew Ng
 
-(https://www.coursera.org/learn/neural-networks-deep-learning)
 
 
 Practise use of Jupyter Nootebook in nn-and-dl/excercise.ipynb
