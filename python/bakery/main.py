@@ -36,17 +36,51 @@ class Cake(Item):
             self.slices_remaining -= count
             return f"With this cake there are {self.slices_remaining} pieces remaining."
 
-#spice_cake = Cake("Gewürz", 18, 8)
-#chocolate_cake = Cake("Schokoladen", 24, 6)
+    # Compare if self.value == other.value
+    def __eq__(self, other):
+        return self.slices_remaining*(self.price/self.slices) == other.slices_remaining*(other.price/other.price)
+
+    # Compare if self.value > cake.value
+    def __gt__(self, other):
+        return self.slices_remaining*(self.price/self.slices) > other.slices_remaining*(other.price/other.price)
+
+    # Compare if self.value < cake.value
+    def __lt__(self, other):
+        return self.slices_remaining*(self.price/self.slices) < other.slices_remaining*(other.price/other.price)
+
+spice_cake = Cake("Gewürz", 18, 8)
+chocolate_cake = Cake("Schokoladen", 24, 6)
 apple_cake = Cake("Apfel", 8, 18)
+
+spice_cake.sell(3)
+chocolate_cake.sell(4)
+
 # Your code is called
 # Your result will trigger an AttributeError when price attribute is set.
 # This Code may be modified to try different test cases.
 result = False
 try:
     # Try to set the price attribute.
+    print("Try to set new apple_cake.price.")
     apple_cake.price = 17
 except AttributeError:
     # The result is True is the price attribute may not be set anew.
     result = True
-print(result)
+    print("Attribute price may not be set anew.")
+#
+#
+# Cake instances are to be compared
+# Code may be modified to try different test cases
+#
+try:
+    result1 = (spice_cake == chocolate_cake)
+    result2 = (spice_cake > chocolate_cake)
+    result3 = (spice_cake < chocolate_cake)
+    print("== : " + str(result1))
+    print("> : " + str(result2))
+    print("< : " + str(result3))
+except Exception as e:
+    print(f"Beim Aufruf Ihres Codes wurde ein Exception ausgelöst:\n{e}")
+    result1 = None
+    result2 = None
+    result3 = None
