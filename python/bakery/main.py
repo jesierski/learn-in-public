@@ -1,10 +1,16 @@
 # Define Class Cake with attributes kind, price, slices in total and remaining pieces
 
 class Item:
-    # Constructor for class Item
+    # Constructor for superclass Item
     def __init__(self, item_type, price):
         self.item_type = item_type
         self.price = price
+
+    # Protect price from being changed
+    def __setattr__(self, price, value):
+        if hasattr(self, price):
+            raise ValueError('Attribute %s already has a value and so cannot be written to' % price)
+        self.__dict__[price] = value
 
 class Cake(Item):
     # Constructor for class Cake inheriting item type and price from Item
@@ -32,5 +38,17 @@ class Cake(Item):
             self.slices_remaining -= count
             return f"With this cake there are {self.slices_remaining} pieces remaining."
 
-spice_cake = Cake("Gewürz", 18, 8)
-chocolate_cake = Cake("Schokoladen", 24, 6)
+#spice_cake = Cake("Gewürz", 18, 8)
+#chocolate_cake = Cake("Schokoladen", 24, 6)
+apple_cake = Cake("Apfel", 8, 18)
+# So wird Ihr Code aufgerufen
+# Ihr Ergebnis soll bewirken, dass ein AttributeError ausgelöst wird
+# wenn das price-Attribut gesetzt wird.
+# Sie können diesen Code bearbeiten, um verschiedene Testfälle auszuprobieren.
+# result = False
+# try:
+#     # Versuch, das price-Attribut zu setzen.
+#     apple_cake.price = 17
+# except AttributeError:
+#     # Gibt True zurück, wenn das price-Attribut nicht gesetzt werden kann.
+#     result = True
