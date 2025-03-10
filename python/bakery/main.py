@@ -4,13 +4,11 @@ class Item:
     # Constructor for superclass Item
     def __init__(self, item_type, price):
         self.item_type = item_type
-        self.price = price
+        self._price = price
 
-    # Protect price from being changed
-    def __setattr__(self, price, value):
-        if hasattr(self, price):
-            raise ValueError('Attribute %s already has a value and so cannot be written to' % price)
-        self.__dict__[price] = value
+    @property
+    def price(self):
+        return self._price
 
 class Cake(Item):
     # Constructor for class Cake inheriting item type and price from Item
@@ -44,10 +42,11 @@ apple_cake = Cake("Apfel", 8, 18)
 # Your code is called
 # Your result will trigger an AttributeError when price attribute is set.
 # This Code may be modified to try different test cases.
-# result = False
-# try:
-#     # Try to set the price attribute.
-#     apple_cake.price = 17
-# except AttributeError:
-#     # The result is True is the price attribute may not be set anew.
-#     result = True
+result = False
+try:
+    # Try to set the price attribute.
+    apple_cake.price = 17
+except AttributeError:
+    # The result is True is the price attribute may not be set anew.
+    result = True
+print(result)
