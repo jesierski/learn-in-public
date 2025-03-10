@@ -1,11 +1,17 @@
 # Define Class Cake with attributes kind, price, slices in total and remaining pieces
-class Cake:
-    # Constructor for class Cake
+
+class Item:
+    # Constructor for class Item
+    def __init__(self, item_type, price):
+        self.item_type = item_type
+        self.price = price
+
+class Cake(Item):
+    # Constructor for class Cake inheriting item type and price from Item
     def __init__(self, kind, price, slices):
+        super().__init__("cake", price)
         assert  isinstance(kind, str)
         self.kind = kind
-        assert  isinstance(price, int)
-        self.price = price
         assert isinstance(slices, int)
         self.slices = slices
         self.slices_remaining = slices
@@ -28,7 +34,3 @@ class Cake:
 
 spice_cake = Cake("Gewürz", 18, 8)
 chocolate_cake = Cake("Schokoladen", 24, 6)
-print(spice_cake.sell(5))
-print(spice_cake.sell(4))
-print(chocolate_cake.sell(-1))
-print(chocolate_cake.sell(0))
