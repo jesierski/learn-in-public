@@ -41,14 +41,13 @@ class Cake(Item):
 #spice_cake = Cake("Gewürz", 18, 8)
 #chocolate_cake = Cake("Schokoladen", 24, 6)
 apple_cake = Cake("Apfel", 8, 18)
-# So wird Ihr Code aufgerufen
-# Ihr Ergebnis soll bewirken, dass ein AttributeError ausgelöst wird
-# wenn das price-Attribut gesetzt wird.
-# Sie können diesen Code bearbeiten, um verschiedene Testfälle auszuprobieren.
+# Your code is called
+# Your result will trigger an AttributeError when price attribute is set.
+# This Code may be modified to try different test cases.
 # result = False
 # try:
-#     # Versuch, das price-Attribut zu setzen.
+#     # Try to set the price attribute.
 #     apple_cake.price = 17
 # except AttributeError:
-#     # Gibt True zurück, wenn das price-Attribut nicht gesetzt werden kann.
+#     # The result is True is the price attribute may not be set anew.
 #     result = True
