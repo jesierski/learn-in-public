@@ -26,9 +26,9 @@ while True:
             print(f"You guessed it! The random number was {random_number}.")
             break
         elif user_number < random_number:
-            print(f"Try {tries} too low!")
+            print(f"Try {tries + 1} too low!")
         else: # user_number > random_number
-            print(f"Try {tries} too high!")
+            print(f"Try {tries + 1} too high!")
         tries += 1
     except ValueError:
         print("Invalid input. Please enter a valid integer.")
