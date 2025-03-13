@@ -2,6 +2,9 @@
 Towards Data Engineering
 
 ---
+## Python
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 ## LinkedIn Learning
 
 ### [Python Programmierpraxis: Objektorientierte Programmierung](https://www.linkedin.com/learning/python-programmierpraxis-objektorientierte-programmierung/das-lab-erkunden)
